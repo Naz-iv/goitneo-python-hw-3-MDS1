@@ -1,11 +1,11 @@
 from utility.file_handler import read_from_file, write_to_file
-from utility.io_handler import io_handler
+from utility.cli_bot import cli_bot
 
 
 def main() -> None:
 
     book = read_from_file()
-    io_handler(book)
+    cli_bot(book)
     write_to_file(book)
 
 
